@@ -5,7 +5,8 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: #F44336;
+  background: rgba(84,58,183,1);
+  background: linear-gradient(60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
 }
 
 /*SCROLLBAR: The -webkit-scrollbar is not supported by Firefox or IE and Edge*/
@@ -16,7 +17,7 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 100px 100px 5px #111; 
+  box-shadow: inset 100px 100px 5px #0e141b; 
   border-radius: 14px;
 }
 /* Handle */
@@ -26,9 +27,8 @@
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #111; 
+  background: #0e141b; 
 }
-
 
 
 /*SCROLL INDICATOR*/
@@ -38,16 +38,27 @@
   z-index: 1;
   width: 100%;
   height: 10px;
-  background: #111;
+  background: #0e141b;
 }
 
 .progress-bar {
   height: 10px;
-  background: #F44336;
+  background: rgba(84,58,183,1);
+  background: linear-gradient(60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
   width: 0%;
 }
 
-
+.content-top {
+  background-color: #161f27;
+  color: #fff;
+  box-shadow: none;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 3rem 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-wrap: balance;
+}
 
 /*BECAUSE MATERIALIZE AND CSS PULSE COLLIDE*/
 @keyframes my-pulse {
@@ -68,21 +79,27 @@
 
 body {
 	height: 100vh;
-	background-color: #111;
+	background-color: #0e141b;
 }
 
 .uk-container {
-	background-color: #111;
+	background-color: #0e141b;
 	padding-top: 25px;
 }
 
 .card {
 	cursor: -webkit-grab;
   background-color: #fafafa;
+  border-radius: 6px;
+}
+.card-image {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .uk-subnav-pill>.uk-active>a {
-    background-color: #F44336;
+    background-color: rgba(84,58,183,1);
+    background: linear-gradient(60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
 }
 
 
@@ -99,7 +116,8 @@ body {
 @media only screen and (orientation: landscape) {
 
   .uk-position-cover:hover {
-    background-color: #F44336;
+    background-color: rgba(84,58,183,1);
+    background: linear-gradient(60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
     opacity: 0.4;
     -webkit-transition: background-color 0.2s; 
     transition: background-color 0.2s;
